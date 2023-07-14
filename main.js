@@ -24,9 +24,9 @@ button.addEventListener('click',()=>{
 
     if(haFallado){
        contadorFallos++;
-       document.querySelector('#ahorcado').style.backgroundPosition= -(180*contadorFallos)+'px 0px'; 
+       document.querySelector('#juego-ahorcado').style.backgroundPosition= -(180*contadorFallos)+'px 0px'; 
        if(contadorFallos>2){
-        document.querySelector('#ahorcado').style.backgroundPosition= -(198*contadorFallos)+'px 220px';
+        document.querySelector('#juego-ahorcado').style.backgroundPosition= -(198*contadorFallos)+'px 220px';
        }
        if(contadorFallos>=5){
         document.querySelector('#resultado').innerHTML="Perdiste, sos de riber.";
